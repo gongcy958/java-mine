@@ -9,5 +9,6 @@ public class ServletDemo{
 
     public static void main(String[] args) {
         System.out.println("测试生成提交的版本号 ");
+        System.out.println("提交信息的标准化 IDE工具");
     }
 }
