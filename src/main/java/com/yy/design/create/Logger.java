@@ -16,15 +16,25 @@ public class Logger {
 
     private FileWriter writer;
 
-    public Logger() throws IOException {
+    private static final Logger instance = new Logger();
+
+    public Logger()  {
         File file = new File("/Users/songguo77/log.txt");
-        writer = new FileWriter(file,true);
+        try {
+            writer = new FileWriter(file,true);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void log(String message) throws IOException {
         synchronized (Logger.class) {
             writer.write(message);
         }
+    }
+
+    public static Logger getInstance() {
+        return instance;
     }
 
 }
