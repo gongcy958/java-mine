@@ -1,3 +1,4 @@
+
 package com.yy.design.create;
 
 /**
@@ -9,4 +10,5 @@ public class Logger {
 
     public Logger() {
     }
+
 }
