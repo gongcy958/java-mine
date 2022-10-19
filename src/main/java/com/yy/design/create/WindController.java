@@ -12,6 +12,8 @@ public class WindController {
 
     public void test() {
         logger.log("test wind");
+
+        SingletonLogger.getInstance().log("test singleton class");
     }
 
 
