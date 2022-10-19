@@ -13,14 +13,22 @@ public class Logger {
 
     private FileWriter writer;
 
-    public Logger() throws IOException {
-        File file = new File("/Users/songguo77/log.txt");
-        writer = new FileWriter(file,true);
+    public Logger() {
+        File file = new File("/Users/mine/log.txt");
+        try {
+            writer = new FileWriter(file,true);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void log(String message) throws IOException {
+    public void log(String message) {
         synchronized (Logger.class) {
-            writer.write(message);
+            try {
+                writer.write(message);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
