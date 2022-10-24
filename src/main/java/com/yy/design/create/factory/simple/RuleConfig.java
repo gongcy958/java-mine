@@ -1,4 +1,4 @@
-package com.yy.design.create.factory;
+package com.yy.design.create.factory.simple;
 
 /**
  * @author gongcy

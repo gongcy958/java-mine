@@ -1,4 +1,9 @@
-package com.yy.design.create.factory;
+package com.yy.design.create.factory.simple;
+
+import com.yy.design.create.factory.simple.IRuleConfigParser;
+import com.yy.design.create.factory.simple.InvalidRuleConfigException;
+import com.yy.design.create.factory.simple.RuleConfig;
+import com.yy.design.create.factory.simple.RuleConfigParserFactory;
 
 /**
  * @author gongcy

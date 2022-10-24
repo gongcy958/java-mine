@@ -1,4 +1,4 @@
-package com.yy.design.create.factory;
+package com.yy.design.create.factory.simple;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,7 @@ public class RuleConfigParserFactory {
 
     // 优化3 单例模式+简单工厂
 
-    private static final Map<String,IRuleConfigParser> cacheParsers = new HashMap<>();
+    private static final Map<String, IRuleConfigParser> cacheParsers = new HashMap<>();
 
     static {
         cacheParsers.put("json",new JsonRuleConfigParser());
