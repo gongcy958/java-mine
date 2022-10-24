@@ -1,6 +1,4 @@
-package com.yy.design.create;
-
-import sun.reflect.misc.ReflectUtil;
+package com.yy.design.create.singleton;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

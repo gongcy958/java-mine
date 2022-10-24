@@ -1,4 +1,4 @@
-package com.yy.design.create;
+package com.yy.design.create.singleton;
 
 import java.io.File;
 import java.io.FileWriter;

@@ -1,4 +1,7 @@
-package com.yy.design.create;
+package com.yy.design.create.singleton;
+
+import com.yy.design.create.singleton.Logger;
+import com.yy.design.create.singleton.SingletonLogger;
 
 /**
  * @author gongcy
