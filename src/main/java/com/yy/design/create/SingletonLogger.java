@@ -14,7 +14,7 @@ public class SingletonLogger {
     private FileWriter fileWriter;
     private static final SingletonLogger instance = new SingletonLogger();
 
-    private SingletonLogger() {
+    public SingletonLogger() {
         File file = new File("/Users/mine/log.txt");
         try {
             fileWriter = new FileWriter(file,true);
