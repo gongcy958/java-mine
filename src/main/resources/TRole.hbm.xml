@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.yy.orm.Role" table="t_role" catalog="mybatis" optimistic-lock="version">
+        <id name="id" type="long">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+
+        <property name="roleName" type="java.lang.String">
+            <column name="role_name" length="11"/>
+        </property>
+        <property name="note" type="java.lang.String">
+            <column name="note" length="255"/>
+        </property>
+    </class>
+</hibernate-mapping>
