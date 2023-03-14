@@ -12,19 +12,19 @@ public class AnalysisToolMain {
 
     public static void main(String[] args) {
 
-        Visitor extractor = new Extractor();
-        Visitor compressor = new Compressor();
-        Visitor collector = new Collector();
-        List<ResourceFile> resourceFiles = listAllResourceFiles();
-        for (ResourceFile resourceFile : resourceFiles) {
-
-            resourceFile.accept(extractor);
-            resourceFile.accept(compressor);
-            resourceFile.accept(collector);
-        }
-
-
-        System.out.println("art.");
+//        Visitor extractor = new Extractor();
+//        Visitor compressor = new Compressor();
+//        Visitor collector = new Collector();
+//        List<ResourceFile> resourceFiles = listAllResourceFiles();
+//        for (ResourceFile resourceFile : resourceFiles) {
+//
+//            resourceFile.accept(extractor);
+//            resourceFile.accept(compressor);
+//            resourceFile.accept(collector);
+//        }
+//
+//
+//        System.out.println("art.");
     }
 
     private static List<ResourceFile> listAllResourceFiles() {

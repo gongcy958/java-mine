@@ -10,8 +10,8 @@
         <module name="java-mine" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="java-mine" target="9" />
+    <bytecodeTargetLevel target="8">
+      <module name="java-mine" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

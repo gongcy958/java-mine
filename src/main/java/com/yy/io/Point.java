@@ -29,12 +29,12 @@ public class Point {
         return p.x == x && p.y == y;
     }
 
-    private static final Set<Point> unitCircle = Set.of(
-            new Point(1,0),new Point(0,1),
-            new Point(-1,0),new Point(0,-1)
-    );
+//    private static final Set<Point> unitCircle = Set.of(
+//            new Point(1,0),new Point(0,1),
+//            new Point(-1,0),new Point(0,-1)
+//    );
 
-    public static boolean onUnitCircle(Point p){
-        return unitCircle.contains(p);
-    }
+//    public static boolean onUnitCircle(Point p){
+//        return unitCircle.contains(p);
+//    }
 }
