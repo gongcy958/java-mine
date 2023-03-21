@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$USER_HOME$/study/leetcode/leetcode/editor/cn/[102]二叉树的层序遍历.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/study/leetcode/leetcode/editor/cn/doc/content/[102]二叉树的层序遍历.md" />
+              <option name="frontendQuestionId" value="leetcode.cn102" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/study/leetcode/leetcode/editor/cn/[102]二叉树的层序遍历.java" />
+              <option name="titleSlug" value="binary-tree-level-order-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/study/leetcode/leetcode/editor/cn/[1038]从二叉搜索树到更大和树.java">
           <value>
             <LeetcodeEditor>
@@ -308,6 +319,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$USER_HOME$/study/leetcode/leetcode/editor/cn/[239]滑动窗口最大值.java" />
               <option name="titleSlug" value="sliding-window-maximum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/study/leetcode/leetcode/editor/cn/[25]K 个一组翻转链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/study/leetcode/leetcode/editor/cn/doc/content/[25]K 个一组翻转链表.md" />
+              <option name="frontendQuestionId" value="leetcode.cn25" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/study/leetcode/leetcode/editor/cn/[25]K 个一组翻转链表.java" />
+              <option name="titleSlug" value="reverse-nodes-in-k-group" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -880,6 +902,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$USER_HOME$/study/leetcode/leetcode/editor/cn/[剑指 Offer 53 - I]在排序数组中查找数字 I.java" />
               <option name="titleSlug" value="zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/study/leetcode/leetcode/editor/cn/[剑指 Offer 54]二叉搜索树的第k大节点.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/study/leetcode/leetcode/editor/cn/doc/content/[剑指 Offer 54]二叉搜索树的第k大节点.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 54" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/study/leetcode/leetcode/editor/cn/[剑指 Offer 54]二叉搜索树的第k大节点.java" />
+              <option name="titleSlug" value="er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof" />
             </LeetcodeEditor>
           </value>
         </entry>
