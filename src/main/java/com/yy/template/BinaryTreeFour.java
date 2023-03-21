@@ -51,4 +51,16 @@ public class BinaryTreeFour {
         traverse(root.left);
         traverse(root.right);
     }
+
+    List<Integer> preorderTraverse(TreeNode root) {
+        List<Integer> has = new LinkedList<>();
+        if (root == null) {
+            return has;
+        }
+
+        has.add(root.val);
+        has.addAll(preorderTraverse(root.left));
+        has.addAll(preorderTraverse(root.right));
+        return has;
+    }
 }
