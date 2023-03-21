@@ -39,4 +39,5 @@ public class BinaryTreeTwo {
         traverseTwo(head.next);
         System.out.println(head.val);
     }
+
 }
