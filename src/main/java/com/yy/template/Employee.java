@@ -2,6 +2,7 @@ package com.yy.template;
 
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * @author gongcy
@@ -47,4 +48,40 @@ public class Employee extends Person{
 //    public Employee getBuddy() {
 //        return new Employee();
 //    }
+
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null) {
+            return false;
+        }
+
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Employee other = (Employee) obj;
+
+//        return getName().equals(other.getName()) && salary == other.salary && hireDay.equals(other.hireDay);
+        return Objects.equals(this.getName(),other.getName()) && salary == other.salary && Objects.equals(hireDay,other.hireDay);
+    }
+
+    @Override
+    public int hashCode() {
+//        return 7 * Objects.hashCode(getName()) + 11 * Double.hashCode(salary) + 13 * Objects.hashCode(hireDay);
+        return Objects.hash(getName(),salary,hireDay);
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + "[name=" + getName()
+                + ",salary=" + salary
+                + ",hireDay=" + hireDay
+                + "]";
+    }
 }
