@@ -49,12 +49,24 @@ public class StaffMain {
 //        int nx = (int) x;
 //        System.out.println(nx);
 
-        Person[] people = new Person[2];
-        people[0] = new Employee("Harry",50000,1989,10,1);
-        people[1] = new Student("Maria","Computer science");
+//        Person[] people = new Person[2];
+//        people[0] = new Employee("Harry",50000,1989,10,1);
+//        people[1] = new Student("Maria","Computer science");
+//
+//        for (Person p : people) {
+//            System.out.println(p.getName() + " " + p.getDescription());
+//        }
 
-        for (Person p : people) {
-            System.out.println(p.getName() + " " + p.getDescription());
-        }
+        Object obj = new Employee("Harry",50000,1999,1,1);
+        Employee e = (Employee) obj;
+
+        double salary = e.getSalary();
+        System.out.println(salary);
+
+        Employee[] staff = new Employee[10];
+        obj = staff;
+        obj = new int[10];
+        System.out.println("-----------");
+
     }
 }
