@@ -51,6 +51,5 @@ public class IdentityMain {
         Employee marie = staff.set(1, new Employee("marie", 30000, 2002, 1, 1));
         System.out.println(marie);
 
-
     }
 }
