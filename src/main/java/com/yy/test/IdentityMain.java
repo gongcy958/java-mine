@@ -51,5 +51,13 @@ public class IdentityMain {
         Employee marie = staff.set(1, new Employee("marie", 30000, 2002, 1, 1));
         System.out.println(marie);
 
+        Integer n = 10;
+        int i = n.intValue();
+        System.out.println(i);
+
+        String s1 = n.toString();
+        System.out.println(s1);
+
+        String s2 = Integer.toString(301);
     }
 }
