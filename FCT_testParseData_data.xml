@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <![CDATA[<returnContents>
+        <returnContent>
+            <billNo>11111</billNo>
+            <patientId gender="female" age = "38">patient111</patientId>
+            <visitNo>1</visitNo>
+            <reportStatus>报告状态</reportStatus>
+            <reportTime>'2019-02-01T12:30:40'</reportTime>
+            <reportOperator>报告人</reportOperator>
+            <labDetails>
+                <labDetail>
+                    <billNo>11111</billNo>
+                    <itemCode>&#1;aj </itemCode>
+                    <itemChiName>*乙肝表面抗体:45.26(阳性)</itemChiName>
+                    <itemResult>结果值</itemResult>
+                    <itemResultUnit>*!@</itemResultUnit>
+                    <itemResultFlag>&lt;1.00</itemResultFlag>
+                    <referenceDesc>结果值描述</referenceDesc>
+                    <reagentMethod>试剂方法</reagentMethod>
+                    <itemEngName>细项英文名称</itemEngName>
+                </labDetail>
+                <labDetail>
+                    <billNo>11111</billNo>
+                    <itemCode></itemCode>
+                    <itemChiName>*乙肝表面抗体:45.26(阳性)</itemChiName>
+                    <itemResult>结果值</itemResult>
+                    <itemResultUnit>$%^</itemResultUnit>
+                    <itemResultFlag>>1.00</itemResultFlag>
+                    <referenceDesc>结果值描述</referenceDesc>
+                    <reagentMethod>试剂方法</reagentMethod>
+                    <itemEngName>细项英文名称</itemEngName>
+                </labDetail>
+            </labDetails>
+        </returnContent>]]>
+        <![CDATA[<returnContent>
+            <billNo>22222</billNo>
+            <patientId gender="female" age = "38">病人id</patientId>
+            <visitNo>就诊号</visitNo>
+            <reportTitle>报告标题</reportTitle>
+            <reportStatus>报告状态</reportStatus>
+            <reportTime>'2019-02-01T12:30:40'</reportTime>
+            <reportOperator>报告人</reportOperator>
+            <labDetails>
+                <labDetail>
+                    <billNo>22222</billNo>
+                    <itemCode>null</itemCode>
+                    <itemChiName>*乙肝表面抗体:45.26(阳性)</itemChiName>
+                    <itemResult>结果值</itemResult>
+                    <itemResultUnit>sss&amp;sss</itemResultUnit>
+                    <itemResultFlag>&gt;1.00</itemResultFlag>
+                    <referenceDesc>结果值描述</referenceDesc>
+                    <referenceHighLimit>参考上限值</referenceHighLimit>
+                    <referenceLowLimit>参考下限值</referenceLowLimit>
+                    <reagentMethod>试剂方法</reagentMethod>
+                    <itemEngName>细项英文名称</itemEngName>
+                </labDetail>
+            </labDetails>
+        </returnContent>
+    </returnContents>]]>
+</root>

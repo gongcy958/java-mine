@@ -37,19 +37,19 @@ public class IdentityMain {
         String s = Arrays.toString(luckyNumbers);
         System.out.println(s);
 
-        var staff = new ArrayList<Employee>();
-        var a = "Java";
-        System.out.println(a.getClass());
-
-        staff.add(new Employee("jack",10000,1999,1,1));
-        staff.add(new Employee("tony",20000,2000,1,1));
-        staff.ensureCapacity(100);
-
-        System.out.println(staff.size());
-        staff.trimToSize();
-
-        Employee marie = staff.set(1, new Employee("marie", 30000, 2002, 1, 1));
-        System.out.println(marie);
+//        var staff = new ArrayList<Employee>();
+//        var a = "Java";
+//        System.out.println(a.getClass());
+//
+//        staff.add(new Employee("jack",10000,1999,1,1));
+//        staff.add(new Employee("tony",20000,2000,1,1));
+//        staff.ensureCapacity(100);
+//
+//        System.out.println(staff.size());
+//        staff.trimToSize();
+//
+//        Employee marie = staff.set(1, new Employee("marie", 30000, 2002, 1, 1));
+//        System.out.println(marie);
 
         Integer n = 10;
         int i = n.intValue();
