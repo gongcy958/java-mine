@@ -1,0 +1,14 @@
+package com.yy.fielddriver.class01;
+
+/**
+ * @author gongcy
+ * @date 2024/1/15 10:39 下午
+ * @Description
+ */
+public class SprintId {
+
+
+    public SprintId(String aSprintId) {
+
+    }
+}

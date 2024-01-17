@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yy.dao.EnglishMapper">
+
+<!--    <select id="select" resultType="com.yy.domain.EnExercise">-->
+<!--        select id, exercise_type as exerciseType, origin_word as originWord, answer_word as answerWord, word_note as wordNote from exercise-->
+<!--    </select>-->
+
+    <select id="selectAll" resultMap="baseMap">
+        SELECT
+            COLUMN_NAME 字段名称,
+            COLUMN_TYPE 字段类型,
+            IF
+                ( IS_NULLABLE = 'YES', '是', '否' ) AS '是否为空',
+            IF
+                ( COLUMN_KEY = 'PRI', '是', '否' ) AS 是否主键,
+            COLUMN_COMMENT 描述
+        FROM
+            INFORMATION_SCHEMA.COLUMNS
+        WHERE
+            table_schema = #{dbName}
+          AND table_name = #{tableName}
+    </select>
+
+    <resultMap id="baseMap" type="com.yy.domain.TableProperty">
+        <id column="字段名称" jdbcType="INTEGER" property="columnName" />
+        <result column="字段类型" jdbcType="VARCHAR" property="columnType" />
+        <result column="是否为空" jdbcType="VARCHAR" property="isNullable" />
+        <result column="是否主键" jdbcType="VARCHAR" property="isPrimaryKey" />
+        <result column="描述" jdbcType="VARCHAR" property="comment" />
+    </resultMap>
+</mapper>

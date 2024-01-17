@@ -1,6 +1,5 @@
 package com.yy.jvm.oom;
 
-import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
 

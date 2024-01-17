@@ -1,6 +1,7 @@
 package com.yy.function.lambda;
 
 
+import java.util.Date;
 import java.util.Objects;
 
 /**
@@ -8,13 +9,27 @@ import java.util.Objects;
  * @date 2023/4/6 4:26 下午
  * @Description
  */
-public class Employee {
+public class Employee implements Cloneable{
 
-    private static int nextId = 1;
+//    private static int nextId = 1;
 
     private String name;
     private double salary;
     private int id;
+    private Date date;
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String address;
+
+    public Employee() {
+    }
 
     public Employee(String name, double salary) {
         this.name = name;
@@ -22,13 +37,13 @@ public class Employee {
         id = 0;
     }
 
-    public static int getNextId() {
-        return nextId;
-    }
-
-    public static void setNextId(int nextId) {
-        Employee.nextId = nextId;
-    }
+//    public static int getNextId() {
+//        return nextId;
+//    }
+//
+//    public static void setNextId(int nextId) {
+//        Employee.nextId = nextId;
+//    }
 
     public String getName() {
         return name;
@@ -72,4 +87,12 @@ public class Employee {
         x = y;
         y = tmp;
     }
+
+    @Override
+    public Employee clone() throws CloneNotSupportedException {
+        Employee cloned = (Employee) super.clone();
+        cloned.date = (Date) date.clone();
+        return cloned;
+    }
+
 }

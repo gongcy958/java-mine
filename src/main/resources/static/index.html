@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>摇骰子</title>
+    <meta charset="UTF-8">
+    <script>
+        function rollDice() {
+            // 生成1到6之间的随机整数
+            var randomNumber = Math.floor(Math.random() * 6) + 1;
+
+            // 显示随机数
+            var resultElement = document.getElementById("result");
+            resultElement.innerHTML = "骰子的点数是：" + randomNumber;
+        }
+    </script>
+</head>
+<body>
+<h1>摇骰子</h1>
+<button onclick="rollDice()">摇骰子</button>
+<p id="result">这里将显示骰子的点数</p>
+</body>
+</html>

@@ -10,7 +10,7 @@
         <module name="java-mine" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
+    <bytecodeTargetLevel target="11">
       <module name="java-mine" target="8" />
     </bytecodeTargetLevel>
   </component>
